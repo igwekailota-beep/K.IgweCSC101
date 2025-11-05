@@ -8,7 +8,7 @@ fn main() {
 
     while num < 10 {
         println!("inside loop number value is {}",num);
-        num+=1;
+        num+=2;
     }
     println!("outside loop number value is {}",num);
 }
