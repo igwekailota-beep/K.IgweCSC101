@@ -1,19 +1,34 @@
 fn main() {
-    let v = vec!['R', 'U', 'S', 'T', 'A', 'C', 'I', 'A', 'N'];
-    let mut input1 = String::new();
-    
-    println!("\nEnter an index value btw (0-8)");
-    std::io::stdin().read_line(&mut input1).expect("Failed to read input");
-    
-    // Index is the non negative value which is smaller than the size of the vector
-    let index: usize = input1.trim().parse().expect("Invalid input");
-    
-    // Getting value at given index value
-    let ch: Option<&char> = v.get(index);
-    value(ch);
-}
+    //create an empty vector
+    let mut city : Vec<String> = Vec::new();
 
-// Method to print the get value
-fn value(n: Option<&char>) {
-    println!("Element of vector {:?}", n);
+    // print City Vector
+    println!("The City Vector has element {}",city.len() );
+
+    // Push new elements into the vector
+    let mut input1 = String::new();
+    println!("How many cities do you want to enter?");
+    std::io::stdin().read_line(&mut input1).expect("Failed to read input");
+    let city_num:i32 = input1.trim().parse().expect("Invalid input");
+    
+    //Initializing the loop
+    for count in 0..city_num{// The loop runs X times
+
+      let mut input2= String::new();
+      println!("Enter City {}", count+1 );
+      std::io::stdin().read_line(&mut input2).expect("Failed to read input");
+      let new_city:String = input2.trim().parse().expect("Invalid input");
+      city.push(new_city); 
+    }
+
+    print!("Your preferred cities are:\n");
+    let mut count=1;
+    //loop to iterate elements in vector
+    for i in city
+    {
+        //iterating through i on the vector
+        println!("{} {}",count, i );
+        count+=1;
+    }
+    
 }
