@@ -1,0 +1,6 @@
+Student Name	Matric. Number	Department	Level
+Oluchi MordiACC10211111Accounting       300
+Adams AliyuECO10110101Economics        100
+Shania BoladeCSC10328828Computer         200
+Adekunle GoldEEE11020202Electrical       200
+Blanca EdemohMEE10202001Mechanical       100

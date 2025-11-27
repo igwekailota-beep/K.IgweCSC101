@@ -121,7 +121,7 @@ fn main() {
     let weight:f64=36.0;
     let height:f64= 18.0;
     let bmi = calculate_bmi(weight,height);
-    println!("BMI is = {}",bmi );
+    println!("BMI is = {}.",bmi );
 }
 fn calculate_bmi(weight_kg:f64, height_m:f64)->f64{
   weight_kg/height_m*height_m
