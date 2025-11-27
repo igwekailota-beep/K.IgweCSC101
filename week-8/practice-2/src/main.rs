@@ -13,6 +13,6 @@ fn main() {
     //getting value at given index value
     let ch:char = v[index];
 
-    println!("{} is the character for index [{}]\n",ch, index );
+    println!("{} is the character for  index [{}]\n",ch, index );
 
 }
