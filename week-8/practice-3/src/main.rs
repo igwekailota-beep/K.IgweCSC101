@@ -27,7 +27,7 @@ fn main() {
     let value = v.get(result);//index 100 doesn't exist
 
     match value{
-        Some (number) =>println!("Found the number {}",number),
-        None =>println!("The box was empty! Nothing found"),
+        Some (number) =>println!("Found the number ({})",number),
+        None =>println!("The box was empty! Nothing found."),
     }
 }
