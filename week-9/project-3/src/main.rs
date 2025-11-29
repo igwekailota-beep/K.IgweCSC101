@@ -6,6 +6,8 @@ fn main() {
     let ministry = vec!["Internal Affairs","Justice","Defense","Power & Steel", "Petroleum"];
     let geo_zone = vec!["South West","North East","South South","South West","Soth East"];
 
+    println!("Ministry of Information: File Update");
+
     let mut file = std::fs::File::create("EFCC.txt").expect("create failed");
     let header = format!("{:2} {:<30} {:<25} {:<20}\n", "S/N","NAME OF COMMISSIONER","MINISTRY","GEOPOLITICAL ZONE");
     file.write_all(header.as_bytes()).expect("write failed");
