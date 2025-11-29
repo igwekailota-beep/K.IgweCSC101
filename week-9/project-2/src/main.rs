@@ -11,7 +11,7 @@ fn main() {
         ("Blanca Edemoh", "MEE10202001", "Mechanical", 100),
     ];
 
-    println!("PAU SMIS - Student Data ");
+    println!("PAU SMIS - Student Data. ");
     
     // 2. Create the file
     let mut file = std::fs::File::create("pau_smis.txt").expect("create failed");
