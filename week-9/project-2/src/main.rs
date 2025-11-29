@@ -18,8 +18,8 @@ fn main() {
 
     // 3. Write the Header Row
     // We use formatted spacing {:<20} to create neat columns
-    file.write_all("Student Name\tMatric. Number\tDepartment\tLevel\n".as_bytes())
-        .expect("write failed");
+    let header = format!("{:<30}{:<20}{:<20}{:<10}\n", "Student Name", "Matric Number", "Department", "Level");
+    file.write_all(header.as_bytes()).expect("write failed");
 
 
     // 4. Loop through the ARRAY
@@ -31,7 +31,7 @@ fn main() {
         let level = student.3;
 
         // Create the formatted string line
-        let line = format!("{:<10}{:<10}{:10}{:10}\n", name, matric, dept, level);
+        let line = format!("{:<30}{:<20}{:<20}{:<10}\n", name, matric, dept, level);
 
         // Display to terminal (optional, just to see it running)
         print!("Saving: {}", line);

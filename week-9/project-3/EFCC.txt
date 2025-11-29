@@ -1,6 +1,6 @@
-S/N   NAME OF COMMISSIONER           MINISTRY                  GEOPOLITICAL ZONE   
-1     Aignogun Alamba Daudu          Internal Affairs          South West           
-2     Murtala Afeez Bendu            Justice                   North East           
-3     Okororocha Calistus Ogbonna    Defense                   South South          
-4     Adawale Jimoh Akanbi           Power & Steel             South West           
-5     Osazuwa Faith Etieye           Petroleum                 Soth East            
+S/N NAME OF COMMISSIONER           MINISTRY                  GEOPOLITICAL ZONE   
+1  Aignogun Alamba Daudu          Internal Affairs          South West           
+2  Murtala Afeez Bendu            Justice                   North East           
+3  Okororocha Calistus Ogbonna    Defense                   South South          
+4  Adawale Jimoh Akanbi           Power & Steel             South West           
+5  Osazuwa Faith Etieye           Petroleum                 Soth East            

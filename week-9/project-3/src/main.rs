@@ -7,7 +7,7 @@ fn main() {
     let geo_zone = vec!["South West","North East","South South","South West","Soth East"];
 
     let mut file = std::fs::File::create("EFCC.txt").expect("create failed");
-    let header = format!("{:5} {:<30} {:<25} {:<20}\n", "S/N","NAME OF COMMISSIONER","MINISTRY","GEOPOLITICAL ZONE");
+    let header = format!("{:2} {:<30} {:<25} {:<20}\n", "S/N","NAME OF COMMISSIONER","MINISTRY","GEOPOLITICAL ZONE");
     file.write_all(header.as_bytes()).expect("write failed");
 
     for i in 0..sn.len(){
@@ -16,9 +16,11 @@ fn main() {
         let ministry_item = ministry[i];
         let geo_zone_item = geo_zone[i];
 
-        let line = format!("{:<5} {:<30} {:<25} {:<20} \n",sn_item,commissioner_item, ministry_item, geo_zone_item);
+        let line = format!("{:<2} {:<30} {:<25} {:<20} \n",sn_item,commissioner_item, ministry_item, geo_zone_item);
 
         file.write_all(line.as_bytes()).expect("File failed to write");
+
+        print!("saving: {}",line  );
         
 
     }
