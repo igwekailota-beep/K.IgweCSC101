@@ -12,15 +12,17 @@ fn main() {
     ];
 
     println!("PAU SMIS - Student Data. ");
-    
+
     // 2. Create the file
     let mut file = std::fs::File::create("pau_smis.txt").expect("create failed");
 
     // 3. Write the Header Row
     // We use formatted spacing {:<20} to create neat columns
-    let header = format!("{:<30}{:<20}{:<20}{:<10}\n", "Student Name", "Matric Number", "Department", "Level");
+    let header = format!(
+        "{:<30}{:<20}{:<20}{:<10}\n",
+        "Student Name", "Matric Number", "Department", "Level"
+    );
     file.write_all(header.as_bytes()).expect("write failed");
-
 
     // 4. Loop through the ARRAY
     for student in students {
